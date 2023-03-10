@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+ 
+struct ogrenci {
+    char ad[20];
+    char soyad[20];
+    int no;
+    char adres[50];
+    };
+	
+int main (){
+    struct ogrenci ogrenciler[5] = {
+	 {"Ali","Kaya","213","İstanbul,Turkiye"},
+	 {"Ayse","Yilmaz","456","İzmir,Turkiye"},
+	 {"Mehmet","Yalcin","765","Ankara Turkiye"},
+	 {"Sinem","Topbas","339","Konya Turkiye"},
+	 {"Fatma","Aydin","967","Bursa Turkiye"}
+	 };	
+	 
+int i;
+	 
+   for (i=0;i<5;i++){
+	 printf("ogrenci %d:\n",i+1);
+	 printf("Ad:%s\n",ogrenciler[i].ad);
+	 printf("Soyad:%s\n",ogrenciler[i].soyad);
+	 printf("No:%d\n",ogrenciler[i].no);
+	 printf("Adres:%s\n",ogrenciler[i].adres);
+	 printf("\n");
+	 }
+
+	
+	return 0;
+}
